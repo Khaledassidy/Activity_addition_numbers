@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activity addition numbers</string>
+    <string name="group_edittext1_hinttext">Enter the number 1</string>
+    <string name="group_edittext2_hinttext">Enter the number 2</string>
+    <string name="group_button">CALCULATE</string>
+
+</resources>

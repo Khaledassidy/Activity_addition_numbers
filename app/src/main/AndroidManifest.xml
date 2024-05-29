@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--heed l file le esmo manifist heed file l asese ta3el l app b2albo m3araf kel she kam activity 3ande sho l icon ta3et l app iza fe she sha8le bade 5aleha teshte8l wifi 2aw aye she mn 5elel heed l file w b2alb heed l file ma7tot mn shshe ra2seye l heye luncher activity-->
+<!--    jowa tag l application fe she esmo activity haw kel l activity le 3ande yehoun bel application 7aleyan -->
+<!--    aye 3onsour mn 4 3anaser l houne Android commponent:Activity_Service_content provider_broadcast reciver 3ashen ykoun 3andak acces 3lyhoun lezm ykouno m3arafen b file l manifest-->
+
+<!--    3ashen 7aded aye activity heye ra2seye besta3mel she esmo intent filter iza ma 7atet b wala activity l intenet filter ma byeshte8l l app
+ heed l intent filter b2albo fe she esmo action w category
+l action heye l esma l main
+w l category heye luncher
+
+ <intent-filter>
+   <action android:name="android.intent.action.MAIN" />
+
+    <category android:name="android.intent.category.LAUNCHER" />
+  </intent-filter>
+
+
+-->
+
+<!--    note bas t2ol l activity exported true ma3enata other application l mawjouden 3al telephon fehoun ya3mlo acces 3lyha
+ iza false only l activity l b2alb l application bye2daro ya3mlo acces 3lyha
+
+ luncher activity 3atoul lezm tkoun exported true
+-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ActivityAdditionNumbers"
+        tools:targetApi="31">
+        <activity
+            android:name=".calculate"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>
